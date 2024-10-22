@@ -1,0 +1,66 @@
+// Variables
+$color-gradient: linear-gradient(90deg, rgba(133, 38, 26, 1) 0%, rgba(0, 0, 0, 1) 100%);
+$color-bordeaux: rgba(133, 38, 26, 1);
+$box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+$background-color-transparent: rgba(255, 255, 255, 0.8);
+.imagen-principal {
+    background-image: url('../img/imagenprincipal.avif');
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    h2{
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.212);
+        text-shadow: 2px 2px 4px rgba(3, 3, 3, 0.986);
+        font-size: 35px;
+        padding: 10px;
+        max-width: 600px;
+        border-radius: 10px;
+        border: 2px solid rgba(255, 255, 255, 0.082);
+        position: absolute;
+    }
+}
+
+
+// Styles
+section {
+  padding: 20px;
+
+  .custom-card {
+    background-color: $background-color-transparent;
+    box-shadow: $box-shadow;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .row {
+      display: flex;
+      align-items: center;
+    }
+
+    .custom-img {
+      max-width: 100%;
+      border-radius: 10px 0 0 10px;
+    }
+
+    .cartabody1 {
+      padding: 20px;
+
+      .carta-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        background: $color-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .carta-text1 {
+        font-size: 1rem;
+        font-weight: bold;
+        color: $color-bordeaux;
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+// Variables
+$background-color: #f4f4f4;
+$wine-red: #c8102e;
+$dark-grey: #333;
+$white: #fff;
+$shadow-color: rgba(200, 16, 46, 0.3);
+$transition-time: 0.4s;
+$border-radius: 12px;
+$max-img-height: 300px; // Ajusta según sea necesario
+$font-title: 'Garamond', serif; // Ejemplo de tipografía elegante
+
+// Mixins
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+@mixin box-shadow($x, $y, $blur, $spread, $color) {
+    box-shadow: $x $y $blur $spread $color;
+}
+
+@mixin gradient-text($start-color, $end-color) {
+    background: linear-gradient(90deg, $start-color, $end-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+  
+// Global styles
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    .x {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.5em; /* Tamaño ajustable según preferencias */
+        color: #800020; /* Bordeaux */
+        font-family: 'Georgia', serif; /* Tipografía elegante */
+      }      
+     }
+
+
+.wine-pairing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.wine-item {
+    flex: 1 1 calc(33% - 20px);
+    background: $white;
+    @include border-radius($border-radius);
+    padding: 15px;
+    @include box-shadow(0, 4px, 12px, 0, $shadow-color);
+    transition: transform $transition-time ease, box-shadow $transition-time ease, opacity $transition-time ease;
+    overflow: hidden;
+
+    &:hover {
+        transform: translateY(-5px);
+        @include box-shadow(0, 10px, 20px, 0, $shadow-color);
+    }
+
+    &.fade-out {
+        opacity: 0;
+        transition: opacity $transition-time ease;
+    }
+}
+
+.wine-item img {
+    width: 100%;
+    max-height: $max-img-height;
+    object-fit: contain; // Ajusta la imagen sin distorsión
+    @include border-radius($border-radius);
+    margin-bottom: 15px;
+}
+
+.wine-item h2 {
+    @include gradient-text($wine-red, $dark-grey);
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-family: $font-title; // Tipografía elegante para los títulos de los elementos
+}
+
+.wine-item p {
+    color: $dark-grey;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .wine-item {
+        flex: 1 1 100%;
+    }
+}
+
+h1.navbar-brand {
+    color: #c8102e; // Color bordeaux
+    background: linear-gradient(90deg, #c8102e, #a00025); // Degradado
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: $font-title; // Tipografía elegante
+    font-size: 2.5rem; // Ajusta el tamaño según sea necesario
+    display: flex;
+    align-items: center;
+    transition: color $transition-time ease, transform $transition-time ease;
+    
+    i {
+        font-size: 2.5rem;
+        margin-right: 10px;
+        color: #c8102e;
+    }
+
+    &:hover {
+        color: #a00025; // Color más oscuro en hover
+        transform: scale(1.05);
+    }
+}

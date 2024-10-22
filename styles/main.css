@@ -1,0 +1,552 @@
+@charset "UTF-8";
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+*::-moz-selection {
+  background-color: black;
+  color: rgb(180, 21, 61);
+}
+*::selection {
+  background-color: black;
+  color: rgb(180, 21, 61);
+}
+
+.navbar-brand {
+  color: rgb(180, 21, 61);
+  text-shadow: 2px 2px 4px rgba(56, 3, 19, 0.726);
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+}
+.navbar-brand i {
+  font-size: 2.5rem;
+  margin-right: 10px;
+  color: #c8102e;
+}
+
+h1.navbar-brand {
+  color: #c8102e;
+  background: linear-gradient(90deg, #c8102e, #a00025);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Garamond", serif;
+  font-size: 2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+h1.navbar-brand:hover {
+  transform: scale(1.05);
+  color: #a00025;
+}
+
+.imagen-principal {
+  background-image: url("../img/imagenprincipal.avif");
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.imagen-principal h2 {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.212);
+  text-shadow: 2px 2px 4px rgba(3, 3, 3, 0.986);
+  font-size: 35px;
+  padding: 10px;
+  max-width: 600px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.082);
+  position: absolute;
+}
+
+section {
+  padding: 20px;
+}
+section .custom-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+section .custom-card .row {
+  display: flex;
+  align-items: center;
+}
+section .custom-card .custom-img {
+  max-width: 100%;
+  border-radius: 10px 0 0 10px;
+}
+section .custom-card .cartabody1 {
+  padding: 20px;
+}
+section .custom-card .cartabody1 .carta-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, rgb(133, 38, 26) 0%, rgb(0, 0, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section .custom-card .cartabody1 .carta-text1 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(133, 38, 26);
+}
+
+.historia {
+  background-color: rgba(255, 255, 255, 0.7882352941);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.historia p {
+  color: #555;
+  margin-bottom: 15px;
+}
+.historia .historiaargentina {
+  color: #b4153d;
+  margin-bottom: 15px;
+}
+.historia h5 {
+  color: #555;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.card-container {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card-container .card {
+  background: #bb8585;
+  box-shadow: 0 0 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card-container .card .card-img-top {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.card-container .card:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .card-container .card {
+    margin-bottom: 20px;
+  }
+}
+
+body {
+  background-image: url("../img/uvasfondo.avif") !important;
+  background-repeat: repeat !important;
+  background-size: 150px auto !important; /* Ajusta según sea necesario */
+  background-position: top left !important;
+}
+
+.clearfix {
+  background-color: #f8f9fa;
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: rgba(90, 11, 11, 0.24) 0px 3px 8px;
+  transition: transform 0.3s ease-in-out;
+}
+.clearfix:hover {
+  transform: scale(1.02);
+  background-color: rgba(253, 252, 248, 0.6862745098);
+}
+.clearfix img {
+  border-radius: 8px;
+  box-shadow: rgba(90, 11, 11, 0.24) 0px 3px 8px;
+  max-width: 100%;
+}
+.clearfix h2 {
+  color: #5a0b0b;
+  font-family: "Georgia", serif;
+  margin-top: 20px;
+  text-align: center;
+}
+.clearfix p {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #020202;
+  text-align: justify;
+}
+
+.footer {
+  background-color: #2a2a2b; /* Color de fondo del footer */
+  padding: 20px 0; /* Espaciado interior del footer */
+  text-align: center; /* Alinea el texto al centro */
+  position: relative; /* Fija el footer en la parte inferior de la ventana */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  bottom: 0;
+  left: 0;
+}
+.footer p {
+  margin: 5px 0; /* Espaciado entre los párrafos */
+  color: #fafaea; /* Color de texto */
+}
+
+.containerfooter {
+  position: relative;
+  min-width: 100%; /* Tamaño máximo del contenido del footer */
+  margin: 0 auto; /* Centra el contenido */
+  padding: 20px; /* Espaciado interno del contenedor del footer */
+}
+
+.h2ss {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  color: #8B0000;
+}
+
+.caja {
+  margin: 5rem 0;
+  background-color: rgba(255, 255, 255, 0.3215686275);
+}
+
+.container-general {
+  position: relative;
+}
+.container-general h3 {
+  font-family: "Garamond", serif;
+  font-size: 1.75rem;
+  color: #8B0000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+.container-general .region {
+  display: flex;
+  align-items: flex-start;
+  background-color: rgba(255, 255, 255, 0.337254902);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: rgba(135, 28, 25, 0.4) 0px 5px, rgba(135, 28, 25, 0.3) 0px 10px, rgba(135, 28, 25, 0.2) 0px 15px, rgba(135, 28, 25, 0.1) 0px 20px, rgba(135, 28, 25, 0.05) 0px 25px;
+  transition: box-shadow 0.3s ease;
+}
+.container-general .region:hover {
+  box-shadow: rgba(135, 28, 25, 0.6) 0px 10px, rgba(135, 28, 25, 0.5) 0px 20px, rgba(135, 28, 25, 0.4) 0px 30px, rgba(135, 28, 25, 0.3) 0px 40px, rgba(135, 28, 25, 0.2) 0px 50px;
+}
+.container-general .region img {
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-general .region p {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  flex: 1;
+  line-height: 1.6;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+.container .x {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5em; /* Tamaño ajustable según preferencias */
+  color: #800020; /* Bordeaux */
+  font-family: "Georgia", serif; /* Tipografía elegante */
+}
+
+.wine-pairing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.wine-item {
+  flex: 1 1 calc(33% - 20px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px 0 rgba(200, 16, 46, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+  overflow: hidden;
+}
+.wine-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px 0 rgba(200, 16, 46, 0.3);
+}
+.wine-item.fade-out {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.wine-item img {
+  width: 100%;
+  max-height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.wine-item h2 {
+  background: linear-gradient(90deg, #c8102e, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  font-family: "Garamond", serif;
+}
+
+.wine-item p {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .wine-item {
+    flex: 1 1 100%;
+  }
+}
+h1.navbar-brand {
+  color: #c8102e;
+  background: linear-gradient(90deg, #c8102e, #a00025);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Garamond", serif;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.4s ease, transform 0.4s ease;
+}
+h1.navbar-brand i {
+  font-size: 2.5rem;
+  margin-right: 10px;
+  color: #c8102e;
+}
+h1.navbar-brand:hover {
+  color: #a00025;
+  transform: scale(1.05);
+}
+
+#comprarBtn {
+  background: linear-gradient(to right, #b11226, #000);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+#comprarBtn:hover {
+  background: linear-gradient(to right, #7f0d1c, #333);
+}
+
+.titulo-comprar {
+  color: #b11226;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 2em;
+}
+
+#simulador {
+  text-align: center;
+}
+#simulador #cepas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#simulador #cepas .card {
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+#simulador #cepas .card h4 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #b11226;
+}
+#simulador #cepas .card img {
+  width: 100%;
+  height: auto;
+}
+#simulador #cepas .card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#simulador .vino-card {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 150px;
+  text-align: center;
+}
+#simulador .vino-card h4 {
+  color: #b11226;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+#simulador .vino-card button {
+  background-color: #b11226;
+  background: linear-gradient(to right, #b11226, #000000);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+#simulador .vino-card button img {
+  width: 24px;
+  margin: 0 10px;
+}
+#simulador .vino-card button:hover {
+  background-color: #7f0d1c;
+}
+#simulador .vino-card img {
+  width: 100%;
+  height: auto;
+  max-height: 100px;
+}
+#simulador #formularioCompra {
+  background-color: #fff;
+  border: 2px solid #b11226;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#simulador #formularioCompra h3 {
+  font-size: 24px;
+  color: #b11226;
+  text-align: center;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+#simulador #formularioCompra p {
+  font-size: 18px;
+  color: #b11226;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+#simulador #formularioCompra label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #b11226;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+#simulador #formularioCompra input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b11226;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#simulador #formularioCompra input:focus {
+  border-color: #830d1c;
+  outline: none;
+  box-shadow: 0 0 5px #540912;
+}
+#simulador #formularioCompra button[type=submit] {
+  background-color: #b11226;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+#simulador #formularioCompra button[type=submit]:hover {
+  background-color: #830d1c;
+}
+
+.cepas h3 {
+  text-shadow: 0 0 10px black;
+  padding: 40px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.h2s {
+  text-align: center;
+  justify-items: center;
+  text-decoration: underline;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  background-color: rgba(189, 173, 141, 0.8);
+  padding: 40px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 80%;
+  color: #2b2323;
+}
+.h2s:hover {
+  color: #7c2529;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .card-container .card {
+    margin-bottom: 20px;
+  }
+}
+.h2ss {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ff4c8b, #1e1e1e, #e6007e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  transition: all 0.4s ease-in-out;
+  padding: 20px;
+  margin: 30px 0;
+  color: #C8102E;
+}
+.h2ss:hover {
+  background: linear-gradient(135deg, #ff4c8b, #2d2d2d, #e6007e);
+  transform: scale(1.05);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}/*# sourceMappingURL=main.css.map */

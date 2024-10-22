@@ -1,0 +1,74 @@
+@import "partials/reset";
+@import "partials/navbar";
+@import "partials/section";
+@import "partials/history";
+@import "partials/cards";
+@import "partials/bodyprov";
+@import "partials/articlebody";
+@import "partials/footer";
+@import "partials/regiones";
+@import "partials/recomendaciones";
+@import "partials/simulador";
+
+.cepas {
+  h3 {
+    text-shadow: 0 0 10px black; // Sombra negra al texto
+    padding: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.h2s {
+  text-align: center;
+  justify-items: center;
+  text-decoration: underline;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  background-color: rgba(189, 173, 141, 0.8); 
+  padding: 40px;
+  border-radius: 8px;
+  margin: 20px auto; 
+  max-width: 80%;
+  color: #2b2323; 
+
+  &:hover {
+    color: #7c2529; 
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .card-container .card {
+    margin-bottom: 20px;
+  }
+}
+$color-bordeaux: #C8102E;
+
+// Estilo para h2ss
+.h2ss {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ff4c8b, #1e1e1e, #e6007e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    transition: all 0.4s ease-in-out;
+    padding: 20px;
+    margin: 30px 0;
+    color: $color-bordeaux;
+
+    &:hover {
+        background: linear-gradient(135deg, #ff4c8b, #2d2d2d, #e6007e);
+        transform: scale(1.05);
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    }
+}

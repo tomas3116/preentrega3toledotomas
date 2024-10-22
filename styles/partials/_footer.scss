@@ -1,0 +1,20 @@
+.footer {
+    background-color: #2a2a2b; /* Color de fondo del footer */
+    padding: 20px 0; /* Espaciado interior del footer */
+    text-align: center; /* Alinea el texto al centro */
+    position: relative; /* Fija el footer en la parte inferior de la ventana */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    bottom: 0;
+    left: 0;
+    p {
+        margin: 5px 0; /* Espaciado entre los párrafos */
+        color: #fafaea; /* Color de texto */
+    }
+}
+
+.containerfooter {
+    position: relative;
+    min-width: 100%; /* Tamaño máximo del contenido del footer */
+    margin: 0 auto; /* Centra el contenido */
+    padding: 20px; /* Espaciado interno del contenedor del footer */
+}

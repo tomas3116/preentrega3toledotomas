@@ -1,0 +1,36 @@
+.clearfix {
+    background-color: #f8f9fa; // Color de fondo suave
+    padding: 20px; // Espaciado interior
+    max-width: 800px; // Ancho máximo
+    margin: 20px auto; // Centrar el contenedor
+    border-radius: 8px; // Bordes redondeados
+    box-shadow: rgba(90, 11, 11, 0.24) 0px 3px 8px; // Sombra bordo fuerte
+    transition: transform 0.3s ease-in-out; // Transición para el hover
+
+    &:hover {
+        transform: scale(1.02); // Agrandar ligeramente en hover
+        background-color: #fdfcf8af; // Cambiar el color de fondo al pasar el mouse
+    }
+
+    img {
+        border-radius: 8px; // Bordes redondeados para la imagen
+        box-shadow: rgba(90, 11, 11, 0.24) 0px 3px 8px; // Sombra suave bordo fuerte
+        max-width: 100%; // Asegura que la imagen no exceda el contenedor
+    }
+
+    h2 {
+        color: #5a0b0b; // Color del texto bordo
+        font-family: 'Georgia', serif; // Fuente serif
+        margin-top: 20px; // Espacio arriba
+        text-align: center; // Centrar texto
+    }
+
+    p {
+        font-family: 'Arial', sans-serif; // Fuente sans-serif
+        font-size: 16px; // Tamaño de texto
+        line-height: 1.5; // Altura de línea
+        margin-bottom: 15px; // Espacio entre párrafos
+        color: #020202; // Color del texto gris oscuro
+        text-align: justify; // Justificar texto
+    }
+}

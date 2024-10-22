@@ -1,0 +1,28 @@
+.navbar-brand {
+    color: rgb(180, 21, 61);
+    text-shadow: 2px 2px 4px rgba(56, 3, 19, 0.726);
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    
+    i {
+        font-size: 2.5rem;
+        margin-right: 10px;
+        color: #c8102e; // Color bordeaux
+    }
+}
+
+h1.navbar-brand {
+    color: #c8102e; // Color bordeaux
+    background: linear-gradient(90deg, #c8102e, #a00025); // Degradado
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Garamond', serif; // Tipografía elegante
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    
+    &:hover {
+        transform: scale(1.05);
+        color: #a00025; // Color más oscuro en hover
+    }
+}
