@@ -1,0 +1,169 @@
+// Colores y estilos
+$form-background: #fff; // Color de fondo del formulario
+$form-border-color: #b11226; // Color del borde del formulario
+$form-font-color: #333; // Color del texto
+$hover-darken: darken(#b11226, 10%); // Color al pasar el mouse
+
+#comprarBtn {
+  background: linear-gradient(to right, #b11226, #000); // Degradado de burdeos a negro
+  color: white; // Color del texto
+  padding: 10px 20px; // Padding
+  border: none; // Sin borde
+  border-radius: 5px; // Bordes redondeados
+  font-size: 1.2em; // Tamaño de fuente
+  cursor: pointer; // Cursor pointer
+
+  &:hover {
+    background: linear-gradient(to right, #7f0d1c, #333); // Degradado más oscuro
+  }
+}
+
+.titulo-comprar {
+  color: #b11226; // Color burdeos
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); // Sombra negra
+  text-align: center; // Centra el texto
+  font-size: 2em; // Tamaño de texto
+}
+
+#simulador {
+  text-align: center;
+
+  // Centrar el contenedor de cepas
+  #cepas {
+    display: flex;
+    justify-content: center; // Centra las cartas en el contenedor
+    flex-wrap: wrap; // Permite que las cartas se envuelvan
+
+    .card {
+      width: 200px; // Ancho fijo
+      height: 300px; // Altura fija
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      text-align: center; // Centra el contenido
+
+      h4 {
+        margin: 0; // Elimina márgenes
+        font-size: 1.2em; // Tamaño del título
+        color: #b11226; // Color del título
+      }
+
+      img {
+        width: 100%; // Ocupa todo el ancho
+        height: auto; // Mantiene la relación de aspecto
+      }
+
+      &:hover {
+        transform: scale(1.1); // Efecto de aumento
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra al pasar el mouse
+      }
+    }
+  }
+
+  .vino-card {
+    display: inline-block;
+    margin: 10px; // Espaciado
+    padding: 10px; // Espaciado interno
+    border: 1px solid #ccc;
+    width: 150px; // Ancho de la carta
+    text-align: center; // Centrar texto
+
+    h4 {
+      color: #b11226; // Color vino
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); // Sombra para el título
+    }
+
+    button {
+      background-color: #b11226; // Color burdeos
+      background: linear-gradient(to right, #b11226, #000000); // Degradado
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      display: flex; // Para alinear iconos
+      align-items: center; // Centra el contenido
+
+      img {
+        width: 24px; // Tamaño del icono de vino
+        margin: 0 10px; // Espaciado entre iconos y texto
+      }
+
+      &:hover {
+        background-color: #7f0d1c; // Color al pasar el mouse
+      }
+    }
+
+    img {
+      width: 100%; // Imagen ocupa todo el ancho
+      height: auto; // Mantiene la proporción
+      max-height: 100px; // Altura máxima
+    }
+  }
+
+  // Estilos del formulario
+  #formularioCompra {
+    background-color: $form-background;
+    border: 2px solid $form-border-color;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    h3 {
+      font-size: 24px;
+      color: $form-border-color;
+      text-align: center;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 18px;
+      color: $form-border-color;
+      margin-bottom: 10px;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      color: $form-border-color;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid $form-border-color;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      color: $form-font-color;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+      &:focus {
+        border-color: darken($form-border-color, 10%);
+        outline: none;
+        box-shadow: 0 0 5px darken($form-border-color, 20%);
+      }
+    }
+
+    button[type='submit'] {
+      background-color: $form-border-color;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($form-border-color, 10%);
+      }
+    }
+  }
+}

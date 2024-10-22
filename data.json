@@ -1,0 +1,105 @@
+{
+    "cepas": [
+      {
+        "nombre": "malbec",
+        "vinos": [
+          {
+            "marca": "DV Catena Malbec",
+            "precio": 10000,
+            "imagen": "pictures/dv.jpeg"
+          },
+          {
+            "marca": "Angélica Zapata",
+            "precio": 15000,
+            "imagen": "pictures/angelica.jpg"
+          },
+          {
+            "marca": "Malbec Argentino",
+            "precio": 26000,
+            "imagen": "pictures/argentino.jpeg"
+          },
+          {
+            "marca": "Catena Zapata",
+            "precio": 40000,
+            "imagen": "pictures/catena.jpg"
+          }
+        ]
+      },
+      {
+        "nombre": "cabernet",
+        "vinos": [
+          {
+            "marca": "Zuccardi Q",
+            "precio": 10000,
+            "imagen": "pictures/q.jpeg"
+          },
+          {
+            "marca": "Zuccardi Brazos",
+            "precio": 15000,
+            "imagen": "pictures/brazos.jfif"
+          },
+          {
+            "marca": "Zuccardi Polygonos",
+            "precio": 26000,
+            "imagen": "pictures/poligonos.png"
+          },
+          {
+            "marca": "Zuccardi Familia",
+            "precio": 40000,
+            "imagen": "pictures/familia.jpg"
+          }
+        ]
+      },
+      {
+        "nombre": "Chardonnay",
+        "vinos": [
+          {
+            "marca": "Terrazas",
+            "precio": 10000,
+            "imagen": "pictures/terrazas.png"
+          },
+          {
+            "marca": "Trumpeter",
+            "precio": 15000,
+            "imagen": "pictures/trumpeter.webp"
+          },
+          {
+            "marca": "Saint Felicien",
+            "precio": 26000,
+            "imagen": "pictures/saintch.png"
+          },
+          {
+            "marca": "El Enemigo",
+            "precio": 40000,
+            "imagen": "pictures/enemigoch.webp"
+          }
+        ]
+      },
+      {
+        "nombre": "pinot",
+        "vinos": [
+          {
+            "marca": "Doña Paula",
+            "precio": 10000,
+            "imagen": "pictures/doña.jpg"
+          },
+          {
+            "marca": "Fin del Mundo",
+            "precio": 15000,
+            "imagen": "pictures/fin.png"
+          },
+          {
+            "marca": "Saurus",
+            "precio": 26000,
+            "imagen": "pictures/saurus.png"
+          },
+          {
+            "marca": "Luca",
+            "precio": 40000,
+            "imagen": "pictures/luca.jfif"
+          }
+        ]
+      }
+    ]
+  }
+  
